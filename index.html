@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Form Modifier</title>
+    <title>React a Skecth</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -21,7 +21,6 @@
             let rCol3 = Math.round(Math.random()*100)
             let b = $(th.currentTarget);
             var timey = window.setInterval(()=>{
-                timeD = 500;
                 cntr++;
                 rCol-=10;rCol2-=10;rCol3-=10;
                 b.css('background-color', 'rgb('+rCol+','+rCol2+','+rCol3+')');
@@ -32,7 +31,7 @@
       var Block = React.createClass({
         render: function(){
             return (
-              <div style={{width: this.props.w+"px", height: this.props.w+"px"}} className="b" id="space1"  onMouseOver={fadeOver}> </div>
+              <div style={{width: this.props.w+"px", height: this.props.w+"px"}} className="b" onMouseOver={fadeOver}> </div>
             )
         }
       });
